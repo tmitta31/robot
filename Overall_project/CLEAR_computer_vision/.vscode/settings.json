@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/c2eed961-fb0e-4382-a83b-220b2aa1673a/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/auto-drone",
+    "appService.deploySubpath": "server"
+}

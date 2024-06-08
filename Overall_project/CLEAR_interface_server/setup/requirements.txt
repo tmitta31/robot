@@ -1,0 +1,1 @@
+(cd "${REQUIREMENTS_DIR}/.."; npm install express; npm install cors; npm install socket.io; npm install sharp; ls; chmod +x setup/genCertAndKey.sh ; ./setup/genCertAndKey.sh ;)

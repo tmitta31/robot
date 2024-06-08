@@ -1,0 +1,16 @@
+*.pyc
+*__pycache__/
+server/node_modules
+worker/ObjectDetection/models/*
+DepthPrediction/datasets
+DepthPrediction/models
+DepthPrediction/networks
+DepthPrediction/testingOutputs
+DepthPrediction/support/kitti_utils.py
+DepthPrediction/support/layers.py
+DepthPrediction/support/options.py
+DepthPrediction/support/utils.py
+DepthPrediction/support/evaluate_depth.py
+DepthPrediction/models/mono+stereo_640x192
+DepthPrediction/models/mono+stereo_640x192.zip
+make

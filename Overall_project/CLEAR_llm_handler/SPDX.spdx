@@ -1,0 +1,6 @@
+SPDXVersion: SPDX-2.1
+    PackageName: CLEAR_llm_chat
+    PackageHomePage: https://github.com/MITLL-CLEAR/CLEAR_llm_chat
+    PackageOriginator: MIT Lincoln Laboratory
+    PackageCopyrightText: 2023 Massachusetts Institute of Technology
+    PackageLicenseDeclared: MIT

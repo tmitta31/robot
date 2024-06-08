@@ -1,0 +1,7 @@
+security/cert.pem
+security/key.pem
+extra
+node_modules
+audioProccesing/security/cert.pem
+audioProccesing/security/key.pem
+__pycache__

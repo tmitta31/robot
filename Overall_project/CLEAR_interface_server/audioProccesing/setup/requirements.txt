@@ -1,0 +1,5 @@
+python -m pip install Flask
+python -m pip install flask-cors
+python -m pip install vosk
+python -m pip install requests
+python -m pip install pydub

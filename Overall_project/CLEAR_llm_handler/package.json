@@ -1,0 +1,19 @@
+// {
+//   "name": "clear_llm_handler",
+//   "version": "1.0.0",
+//   "description": "CLEAR llm chat is responsible for handling a given large language model (LLM) tasked with the decision-making processes of the CLEAR project. This service connects to the worker server to receive prompts. These prompts will then be appended to a conversation ledger, which is given to the LLM. The LLM’s response will then be relayed to the worker server and appended to the conversation ledger. Additionally, it preserves and catalogs the conversations.",
+//   "main": "script.js",
+//   "scripts": {
+//     "test": "echo \"Error: no test specified\" && exit 1"
+//   },
+//   "author": "",
+//   "license": "ISC",
+//   "dependencies": {
+//     "body-parser": "^1.20.2",
+//     "express": "^4.19.2",
+//     "socket.io": "^4.7.5"
+//   },
+//   "devDependencies": {
+//     "nodemon": "^3.1.3"
+//   }
+// }

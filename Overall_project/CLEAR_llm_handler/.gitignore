@@ -1,0 +1,7 @@
+*.pyc
+__pycache__
+makefile
+notes
+lazyTesting
+chatHistory
+testing

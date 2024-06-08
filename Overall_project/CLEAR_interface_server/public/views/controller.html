@@ -1,0 +1,90 @@
+<!-- DISTRIBUTION STATEMENT A. Approved for public release. Distribution is unlimited.
+
+This material is based upon work supported by the Under Secretary of Defense for 
+Research and Engineering under Air Force Contract No. FA8702-15-D-0001. Any opinions,
+findings, conclusions or recommendations expressed in this material are those 
+of the author(s) and do not necessarily reflect the views of the Under 
+Secretary of Defense for Research and Engineering.
+
+© 2023 Massachusetts Institute of Technology.
+
+Subject to FAR52.227-11 Patent Rights - Ownership by the contractor (May 2014)
+
+The software/firmware is provided to you on an As-Is basis
+
+Delivered to the U.S. Government with Unlimited Rights, as defined in DFARS Part 
+252.227-7013 or 7014 (Feb 2014). Notwithstanding any copyright notice, 
+U.S. Government rights in this work are defined by DFARS 252.227-7013 or 
+DFARS 252.227-7014 as detailed above. Use of this work other than as specifically
+authorized by the U.S. Government may violate any copyrights that exist in this work. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The CLEAR Platform</title>
+    <link rel="stylesheet" href="controllerStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container-fluid min-vh-100 d-flex flex-column justify-content-between">
+        <div id="navbar" class="d-flex text-center text-dark justify-content-between">
+            <h1 class="fs-6 mb-0">CLEAR Interface </h1>
+            <a href="#" class="share" role="button">
+                <i class="bi bi-upload d-flex"></i>
+                <p class="mb-0">share</p>
+            </a>
+        </div>
+        <div id="main-content" class="bg-white d-flex align-self-stretch me-2">
+            <div id="video-player" class="d-flex align-items-center justify-content-center">
+                <img id="image" src="" alt="Uploaded Image" width="100%" height="100%" class="p-2">
+                <div id="dot" style="position: absolute; width: 10px; height: 10px; border-radius: 50%; background: red; display: none; z-index: 1;"></div>
+            </div>
+            <div id="userInteraction" class="d-flex flex-column text-dark">
+                <div id="modeContainer" class="d-flex flex-column">
+                    <div id="modeSelection" class="d-flex align-items-center justify-content-evenly align-self-stretch">
+                        <p id="chatIcon" class="d-flex align-items-center justify-content-center w-50 icon selected"><i class="bi bi-chat-text"></i>Chat</p>
+                        <p id="controlIcon" class="d-flex align-items-center justify-content-center w-50 icon"><i class="bi bi-controller"></i>Controls</p>
+                    </div>
+                </div>
+                <div id="interactionWrapper">
+                    <div id="chat-area" class="d-flex">
+                        <div id="chat-content" class="d-flex flex-column align-self-stretch w-100 chat-bubble">
+                            <p><strong>CLEAR:</strong> Hello!</p>
+                            <!-- Empty div needed needed for scroll-to-bottom function -->
+                            <div id="anchor"></div>
+                        </div>
+                    </div> 
+                    <div id="control-area" class="d-none justify-content-center">
+                        <div id="control-content" class="d-flex flex-column">
+                            <p class="align-self-stretch">Use the following keys on your keyboard to control the robot in real-time.</p>
+                            <img id="keys" src="./resources/control-options.png" alt="keys" >
+                        </div>
+                    </div> 
+                </div>
+
+                <div id="chatInput" class="d-flex align-items-center align-self-stretch rounded">
+                    <i id="toggleMic" class="bi bi-mic-fill" role="button"></i>
+                    <input type="text" id="textInput" placeholder="Type a command" class="d-flex align-items-center">
+                    <i class="bi bi-send-fill" role="button"></i>
+                </div>  
+
+            </div>
+            
+        </div>
+        <div id="footer" class="d-none">
+        </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="function/userInfo.js"></script>
+        <script src="function/audioMagic.js"></script>
+        <script src="function/audioProcessing.js"></script>
+        <script src="function/clickAndKey.js"></script>
+        <script src="function/chatUpdate.js"></script>
+        <script src="function/scrollToBottom.js"></script>
+    </div>
+</body>
+</html>
